@@ -1,0 +1,27 @@
+# --- DotGuard / local artifacts (unsafe/transient) ---
+# Never commit agent framework state
+.agents/
+
+# Runtime logs, reports, and scratch files
+logs/
+reports/
+*.log
+*.exit
+*.txt
+
+# Backup runs (probe artifacts + run snapshots)
+backup*.log
+backup*.exit
+*probe*
+backup_*.*
+*_probe.*
+
+# Any command-run capture artifacts
+COMMANDS_RUN.md
+discover.log
+logs_dotguard_discover.txt
+
+# Environment-specific / local data (if present)
+data/
+tui/
+
